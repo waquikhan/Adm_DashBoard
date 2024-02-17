@@ -1,10 +1,15 @@
 import React from 'react'
+import { ChartComponent , StockChartPeriodsDirective, SeriesDirective, Inject, Legend, Category, StackingColumnSeries, Tooltip } from '@syncfusion/ej2-react-charts'
 
-const StackedChart = () => {
+import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../data/dummy'
+
+const StackedChart = ({height, width}) => {
   return (
-    <div>
-      StackedChart
-    </div>
+    <ChartComponent
+    height={height}
+    width={width}
+    >
+    </ChartComponent>
   )
 }
 
